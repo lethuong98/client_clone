@@ -1,27 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}  
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.container {
+    width: 100%;  
+    margin-inline: auto;  
+    padding-inline: 12px;
+}
+@media (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+@media (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+@media (min-width: 1536px) {
+    .container {
+        max-width: 100%;
+        padding-inline: 70px;
+    }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.row {
+    width: 100%;
+    margin-inline: auto; 
+    padding-inline: 12px;  
+}
+@media (min-width: 640px) {
+    .row {
+        max-width: 640px;
+    }
+}
+@media (min-width: 768px) {
+    .row {
+        max-width: 768px;
+    }
+}
+@media (min-width: 1024px) {
+    .row {
+        max-width: 1024px;
+    }
+}
+@media (min-width: 1280px) {
+    .row {
+        max-width: 1200px;
+    }
+}
+
+/* ql */
+.ql-editor h1{
+    display: block;
+font-size: 2em;
+margin-top: 0.67em;
+margin-bottom: 0.67em;
+margin-left: 0;
+margin-right: 0;
+font-weight: bold;
+}
+.ql-editor h2{
+    display: block;
+font-size: 1.5em;
+margin-top: 0.83em;
+margin-bottom: 0.83em;
+margin-left: 0;
+margin-right: 0;
+font-weight: bold;
+}
+.ql-editor h3{
+    display: block;
+font-size: 1.17em;
+margin-top: 1em;
+margin-bottom: 1em;
+margin-left: 0;
+margin-right: 0;
+font-weight: bold;
+}
+.ql-editor h4{
+    display: block;
+margin-top: 1.33em;
+margin-bottom: 1.33em;
+margin-left: 0;
+margin-right: 0;
+font-weight: bold;
+}
+.ql-editor h5{
+    display: block;
+font-size: .83em;
+margin-top: 1.67em;
+margin-bottom: 1.67em;
+margin-left: 0;
+margin-right: 0;
+font-weight: bold;
+}
+.ql-editor h6{
+    display: block;
+font-size: .67em;
+margin-top: 2.33em;
+margin-bottom: 2.33em;
+margin-left: 0;
+margin-right: 0;
+font-weight: bold;
 }
